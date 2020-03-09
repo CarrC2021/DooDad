@@ -152,7 +152,7 @@ public class DooDadDemo extends AppCompatActivity implements SensorEventListener
         if (width > 0.0 && height > 0.0) {
             // when window is not visible, sometimes height and width become zero;
             // in this case we don't want to move the spot. Otherwise, move the spot
-            spot.moveSpot(-aX, aY, msv.getMyWidth(), msv.getMyHeight());
+            spot.moveSpot(-aY, aX, msv.getMyWidth(), msv.getMyHeight());
         }
 
         // If the spot has reached its target, then reset
